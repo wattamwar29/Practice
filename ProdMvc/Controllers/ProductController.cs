@@ -15,7 +15,7 @@ public class ProductController:Controller{
         var data = context.Product.Find(id);
         return View(data);
     }
-    public IActionResult Create(int id){
+ 
         return View();
     }
     [HttpPost]
