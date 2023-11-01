@@ -18374,6 +18374,11 @@
   "RootNamespace": "SGMS",
   "Documents": [
     {
+      "FilePath": "/home/coder/project/workspace/SGMS/Views/Grade/List.cshtml",
+      "TargetPath": "Views\\Grade\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/coder/project/workspace/SGMS/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
