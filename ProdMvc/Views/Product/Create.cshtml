@@ -1,0 +1,35 @@
+@model ProdMvc.Models.Product
+<h2>Adding Product</h2>
+<hr>
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.DisplayNameFor(m=>m.Id)
+        @Html.EditorFor(m=>m.Id)
+        @Html.ValidationMessageFor(m=>m.Id)
+       
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.Name)
+        @Html.EditorFor(m=>m.Name)
+        @Html.ValidationMessageFor(m=>m.Name)
+       
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.price)
+        @Html.EditorFor(m=>m.price)
+        @Html.ValidationMessageFor(m=>m.price)
+       
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.stock)
+        @Html.EditorFor(m=>m.stock)
+        @Html.ValidationMessageFor(m=>m.stock)
+       
+    </div>
+<input type="submit" value="Save">
+}
+<br>
+<br>
+<br>
+@Html.ActionLink("Back to List","List")
