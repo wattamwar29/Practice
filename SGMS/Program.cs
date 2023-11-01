@@ -1,13 +1,14 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore;
 using SGMS.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-// var connectionString=builder.Configuration.GetConnectionString("mycon");
+var connectionString=builder.Configuration.GetConnectionString("mycon");
  
-// builder.Services.AddDbContext<SGMSDbContext>(options => options.UseSqlServer(connectionString));
-builder.Services.AddDbContext<SGMSDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("mycon")));
+builder.Services.AddDbContext<SGMSDbContext>(options => options.UseSqlServer(connectionString));
+//builder.Services.AddDbContext<SGMSDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("mycon")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
