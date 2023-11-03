@@ -13,10 +13,17 @@ namespace demowebapi.Controllers
         {
             return Fruits;
         }
-        [HttpGet("{id}")]
+        [HttpGet()]
+        [Route("ShowFruits/{id}")]
         public string GetFruits(int id)
         {
             return Fruits[id];
+        }
+        [HttpPost]
+        [Route("AddFruit")]
+        public void Post([FromBody] string data)
+        {
+            Fruits.Add(data);
         }
     }
 }
