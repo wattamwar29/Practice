@@ -8,7 +8,8 @@ namespace demowebapi.Controllers
     {
         static List<string> Fruits=new List<string>{"Apple","Orange","Mango","Grapes","Banana"};
         [HttpGet]
-        public IEnumerable<string> Get()
+        [Route("ShowFruits")]
+        public IEnumerable<string> GetFruits()
         {
             return Fruits;
         }
