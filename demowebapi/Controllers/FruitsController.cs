@@ -25,5 +25,11 @@ namespace demowebapi.Controllers
         {
             Fruits.Add(data);
         }
+        [HttpPut]
+        [Route("Edit/{id}")]
+        public void Put(int id,[FromBody] string data)
+        {
+            Fruits[id]=data;
+        }
     }
 }
