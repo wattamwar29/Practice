@@ -31,5 +31,11 @@ namespace demowebapi.Controllers
         {
             Fruits[id]=data;
         }
+        [HttpDelete]
+        [Route("Kill/{id}")]
+        public void Delete(int id,[FromBody] string data)
+        {
+            Fruits.RemoveAt(id);
+        }
     }
 }
