@@ -13,7 +13,25 @@ namespace MovieApp.Controllers
         [Route("ListMovies")]
         public IActionResult Get()
         {
-            
+            //var data=context.Movies.ToList();
+            var data=from m in context.Movies select m;
+            return Ok(data);
+        }
+        [HttpGet]
+        [Route("ListMovies/{id}")]
+        public IActionResult Get(int id)
+        {
+           if(id==null)
+           {
+            return BadRequest("Id cannot be null");
+           }
+           var data=(from m in context.Movies where m.Id==id select m).FirstOrDefault();
+           //var data=context.Movies.Find(id);
+           if(data==null)
+           {
+            return NotFound($"Movie {id} not found");
+           }
+           return Ok(data);
         }
     }
 }
