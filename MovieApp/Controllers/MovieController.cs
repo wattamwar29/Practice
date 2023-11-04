@@ -58,7 +58,7 @@ namespace MovieApp.Controllers
             if(ModelState.IsValid)
             {
                 Movie omovie=context.Movies.Find(id);
-                omovie.Name=movie.Rating;
+                omovie.Name=movie.Name;
                 omovie.Rating=movie.Rating;
                 omovie.YearRelease=movie.YearRelease;
                 context.SaveChanges();
