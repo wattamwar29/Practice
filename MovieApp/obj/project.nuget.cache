@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QhdqKA+q2azab2Jtn0QV6/a9wR0Xf7hcRyhBv1928gAwOaHzQX8c1DNFlRiHB37QZel7/9qsLsLAYqZ3lmQbTg==",
+  "dgSpecHash": "Oe2KIoK2cV+rwpg1qe11ilwCUdNp3BIrV1gI7FBG2SrDOCnLb/zxmgiG1Joz0Hvx55/CAL41QViWNHEo85ZXnA==",
   "success": true,
-  "projectFilePath": "/home/coder/project/workspace/demowebapi/MovieApp/MovieApp.csproj",
+  "projectFilePath": "/home/coder/project/workspace/MovieApp/MovieApp.csproj",
   "expectedPackageFiles": [
     "/home/coder/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
