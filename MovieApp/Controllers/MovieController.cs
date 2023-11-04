@@ -51,5 +51,8 @@ namespace MovieApp.Controllers
             }
             return Created("Record Added",movie);
         }
+        [HttpPut]
+        [Route("EditMovie/{id}")]
+        public I
     }
 }
