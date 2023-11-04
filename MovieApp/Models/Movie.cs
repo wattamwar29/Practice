@@ -1,5 +1,16 @@
 using System.Collections.Generic;
-namespace MovieApp.@model
+using System.ComponentModel.DataAnnotations;
+namespace MovieApp.Models
 {
-    public class MovieApp
+    public class Movie
+    {
+        [key]
+        public int Id{get;set;}
+        [Required]
+        public string Name{get;set;}
+        public int YearRelease{get;set;}
+        public int Rating{get;set;}
+        public ICollection<Detail> Details{get;set;}
+
+    }
 }
