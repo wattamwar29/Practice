@@ -4,7 +4,7 @@ namespace MovieApp.Models
 {
     public class Movie
     {
-        [key]
+        
         public int Id{get;set;}
         [Required]
         public string Name{get;set;}
