@@ -73,23 +73,20 @@ namespace MovieApp.Controllers
            
             return BadRequest("Unable to Edit record");
         }
-        // [HttpDelete]
-        // [Route("DeleteMovies/id")]
-        // public IActionResult Delete(int id)
-        // {
-        //     try{
-        //             var movie = context.Movies.Where(m=>m.DetailId==id);
-        //             if(movie.Count()!=0){
-        //                 throw new Exception("Cannot Delete Movie");
-        //             }
-        //             var data = context.Details.Find(id);
-        //             context.Details.Remove(data);
-        //             return Ok();
-        //         }
-        //         catch(System.Exception ex){
-        //             return BadRequest(ex.Message);
-        //         }
-        // }
+        [HttpDelete]
+        [Route("DeleteMovies/id")]
+        public IActionResult Delete(int id)
+        {
+            try{
+                    var data = context.Details.Find(id);
+                    context.Details.Remove(data);
+                    context.SaveChanges();
+                    return Ok();
+                }
+                catch(System.Exception ex){
+                    return BadRequest(ex.Message);
+                }
+        }
  
     }
 }
