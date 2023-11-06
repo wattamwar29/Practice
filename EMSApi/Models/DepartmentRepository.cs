@@ -16,7 +16,8 @@ namespace EmsApi.Models{
         {
             DepartmentRepository department=context.Departments.Find(dept.Id);
             department.DeptName=dept.DeptName;
-            department.Location=dept
+            department.Location=dept.Location;
+            
         }
         public Department FindDept(int id)
         {
