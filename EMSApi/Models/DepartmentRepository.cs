@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-namespace EmsApi.Models{
+namespace EMSApi.Models{
     public class DepartmentRepository: IDept{
         EmsDbContext context = new EmsDbContext();
         public void AddDept(Department dept)

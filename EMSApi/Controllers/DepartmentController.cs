@@ -13,12 +13,12 @@ namespace EmsApi.Controllers
         {
             this.repo=_repo;
         }
-        [HttpGet]
-        [Route("ListDept")]
-        public IActionResult GetDept()
-        {
-            var data=repo.GetDepartments();
-            return Ok(dept);
-        }
+        // [HttpGet]
+        // [Route("ListDept")]
+        // public IActionResult GetDept()
+        // {
+        //     var data=repo.GetDepartments();
+        //     return Ok(dept);
+        // }
     }
 }
