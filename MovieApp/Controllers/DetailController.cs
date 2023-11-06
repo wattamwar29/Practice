@@ -13,8 +13,8 @@ namespace MovieApp.Controllers
         [Route("DisplayMovieDetailS/{id}")]
         public IActionResult Get(int id)
         {
-            var data = from d in context.Details where d.MovieId=id select new{
-                Artist=d.Actor,Role=d.Role,MovieName=d.MovieName,Year=d.Movie.YearRelease
+            var data = from d in context.Details where d.MovieId==id select new{
+                Artist=d.Actor,Role=d.Role,MovieName=d.Movie.Name,Year=d.Movie.YearRelease
             };
             return Ok(data);
         }
