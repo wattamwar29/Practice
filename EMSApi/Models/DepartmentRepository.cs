@@ -10,14 +10,16 @@ namespace EmsApi.Models{
         }
         public void DeleteDept(int id)
         {
-           
+            Department department=context.Departments.Find(id);
+            context.Departments.Remove(department);
+            context.SaveChanges();
         }
         public void EditDept(Department dept)
         {
             DepartmentRepository department=context.Departments.Find(dept.Id);
             department.DeptName=dept.DeptName;
             department.Location=dept.Location;
-            
+            context.SaveChanges();
         }
         public Department FindDept(int id)
         {
