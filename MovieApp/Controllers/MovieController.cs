@@ -2,6 +2,7 @@ using MovieApp.Models;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
+using MovieApp.V
 namespace MovieApp.Controllers
 {
     [ApiController]
@@ -9,6 +10,13 @@ namespace MovieApp.Controllers
     public class MovieController:ControllerBase
     {
         MovieContext context=new MovieContext();
+        [HttpGet]
+        [Route("ShowMovies")]
+        public IActionResult GetShowMovies()
+        {
+            var data=context.Movie_VMs.FromSqlInterpolated<Movie_VM>($"MovieInfo");
+            return Ok(data);
+        }
         [HttpGet]
         [Route("DisplayMovies/Rating/Year")]
         public IActionResult GetDisplayMovies(int rating, int year)
