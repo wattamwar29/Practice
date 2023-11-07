@@ -2,7 +2,7 @@ using MovieApp.Models;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using MovieApp.V
+using MovieApp.ViewModel;
 namespace MovieApp.Controllers
 {
     [ApiController]
