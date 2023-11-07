@@ -13,7 +13,7 @@ namespace MovieApp.Controllers
         [Route("DisplayMovies/Rating/Year")]
         public IActionResult GetDisplayMovies(int rating, int year)
         {
-            var data = from m in context.Movies where m.Rating == rating && m.YearReleased==year select m;
+            var data = from m in context.Movies where m.Rating == rating && m.YearRelease==year select m;
             if(data.Count()==0){
                 return NotFound($"No movies in {rating} for the year {year}");
             }
