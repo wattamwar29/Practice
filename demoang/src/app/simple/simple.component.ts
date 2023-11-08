@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./simple.component.css']
 })
 export class SimpleComponent implements OnInit {
-  weekdays:string[]=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+  weekdays:string[]=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 
   constructor() { }
 
