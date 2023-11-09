@@ -25,6 +25,11 @@ City:{{emp.city}}<br>
 <h2>Employee Listing</h2>
 <table>
 <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Salary</th>
+    <th>City</th>
+</thead>
     <tbody>
         <tr *ngFor="let emp of emplist">
             <td>{{emp.id}}</td>
@@ -32,7 +37,5 @@ City:{{emp.city}}<br>
             <td>{{emp.salary}}</td>
             <td>{{emp.city}}</td>
         </tr>
-
     </tbody>
-</thead>
 </table>
