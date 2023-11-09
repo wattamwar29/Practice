@@ -27,6 +27,6 @@ tr:hover
 }
 th
 {
-    font
-
+    font-weight: bolder;
+    text-align: center;
 }
