@@ -17,6 +17,15 @@ export class SimpleComponent implements OnInit {
     {id:135,name:'Jay',salary:60000,city:'Tirupati'},
     {id:136,name:'Vijay',salary:50000,city:'Tirumala'}
   ]
+  GetTotal():number
+  {
+    var total:number=0;
+    for(var i=0;i<this.emplist.length;i++)
+    {
+      total=total+this.emplist[i].salary
+    }
+    return total
+  }
   constructor() { }
 
   ngOnInit() {
