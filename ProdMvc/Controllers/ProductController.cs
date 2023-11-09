@@ -17,7 +17,7 @@ public class ProductController:Controller{
     }
  
         //return View();
-    }
+    
     [HttpPost]
     public IActionResult Create(Product prod){
         if(ModelState.IsValid){
@@ -54,5 +54,6 @@ public class ProductController:Controller{
          context.SaveChanges();
          return RedirectToAction("List");
         }
+}
            
     
