@@ -16,7 +16,7 @@ public class ProductController:Controller{
         return View(data);
     }
  
-        return View();
+        //return View();
     }
     [HttpPost]
     public IActionResult Create(Product prod){
@@ -54,6 +54,5 @@ public class ProductController:Controller{
          context.SaveChanges();
          return RedirectToAction("List");
         }
-        
-    }
-
+           
+    
