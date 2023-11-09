@@ -22,3 +22,17 @@ Name:{{emp.name}}<br>
 Salary:{{emp.salary}}<br>
 City:{{emp.city}}<br>
 <hr>
+<h2>Employee Listing</h2>
+<table>
+<thead>
+    <tbody>
+        <tr *ngFor="let emp of emplist">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.city}}</td>
+        </tr>
+
+    </tbody>
+</thead>
+</table>

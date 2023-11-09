@@ -10,6 +10,13 @@ export class SimpleComponent implements OnInit {
   weekdays:string[]=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
   age:number=26
   emp:Employee={id:132,name:'Tom',salary:40000,city:'Mumbai'}
+  emplist:Employee[]=[
+    {id:132,name:'Tom',salary:40000,city:'Mumbai'}
+    {id:133,name:'Jerry',salary:40000,city:'Pune'}
+    {id:134,name:'Bob',salary:40000,city:'Delhi'}
+    {id:135,name:'Jay',salary:40000,city:'Tirupati'}
+    {id:136,name:'Vijay',salary:40000,city:'Tirumala'}
+  ]
   constructor() { }
 
   ngOnInit() {
