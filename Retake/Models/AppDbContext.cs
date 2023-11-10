@@ -9,5 +9,11 @@ public class AppDbContext : DbContext
     public AppDbContext(){}
     public AppDbContext(DbContextOptions<AppDbContext> options):base(options)
     {}
-    protected override void 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+    if(!optionsBuilder.IsConfigured)
+    {
+        optionsBuilder.UseSqlServer("User ID=sa;password=examlyMssql@123; server=localhost;Database=bdb;trusted_connection=false;Persist Security Info=False;Encrypt=False");
+    }
+    }
 }
