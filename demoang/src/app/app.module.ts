@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 import { SimpleComponent } from './simple/simple.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
-import{EmpC}
+import { EmpComponent } from './emp/emp.component';
+import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SimpleComponent,
     RegisterComponent,
+    EmpComponent,
+    DemoComponent,
   ],
   imports: [
     ReactiveFormsModule,
