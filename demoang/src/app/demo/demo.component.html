@@ -1,1 +1,25 @@
-<p>demo works!</p>
+<h2>Data Binding String Interpolation</h2>
+ 
+Name is {{name}}&nbsp;&nbsp;&nbsp;
+ 
+Age is {{age}}  
+ 
+<br>
+ 
+Add = {{70+80}} <br>
+<p> {{age>25 ? 'Eligible' : 'Not Eligible' }} </p>
+ 
+<p>Sum = {{Sum()}} </p>
+<hr>
+<h2>Event Binding</h2>
+<input type = "button" value ="Display" (click) = "Show()" >
+<hr>
+<h2>Property Binding</h2>
+ 
+<input type = "text" [value] = "name" >
+<br>
+<!-- <input type="button" [value] = "name" [disabled] = "age > 25 ? false : true " >  -->
+ 
+<h2>Two Way Binding</h2>
+<input type="text" [value] ="city" readonly > <br><br>
+<input type="text" [value] = "city">
