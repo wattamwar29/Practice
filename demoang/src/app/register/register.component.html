@@ -13,6 +13,13 @@
     <div>
         <label for = "lastname">Last Name</label>
         <input id = "lastname" name = "lastname"  type ="text" ngModel maxlength="25" minlength="3">
+        <div *ngIf="lastname.invalid && (lastnamedirty || lastname.touched)" style="color:red"></div>
+        <div *ngIf="lastname.errors.maxlength">
+            Name not more than 30 chars
+        </div>
+        <div *ngIf="lastname.errors.minlength">
+            Name should be 5 chars
+        </div>
     </div>
      
     <div>
