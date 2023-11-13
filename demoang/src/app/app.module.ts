@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { SimpleComponent } from './simple/simple.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
-import{E}
+import{EmpC}
 
 @NgModule({
   declarations: [
