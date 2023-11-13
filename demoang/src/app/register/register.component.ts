@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterComponent implements OnInit {
 
   constructor() { }
-  RegisterStudent(stdForm:NG)
+  RegisterStudent(stdForm:NGForm):void
+  {
+    console.log(stdForm.value)
+  }
 
   ngOnInit() {
   }
