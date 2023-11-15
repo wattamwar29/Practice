@@ -13,4 +13,7 @@ export class MovieService {
   {
     return this.httpclient.get<any[]>(`${this.url}/listmovies`)
   }
+  movie:IMovie
+  getMovie(id:number):Observable<IMovie>
+  
 }
