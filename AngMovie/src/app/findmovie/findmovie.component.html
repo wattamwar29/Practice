@@ -1,4 +1,21 @@
 <h3>Details of Movie {{moviedata.name}}</h3>
-<div style="background-color: lime;padding-left:20px;">
-
+<div style="background-color: cyan;padding-left: 20px ;">
+Id:{{moviedata.id}}<br><br>
+Year:{{moviedata.yearRelease}}<br><br>
+Rating:{{moviedata.rating}}
+ 
 </div>
+<br><br>
+<a [routerLink]="['/listmovies']">Back to List</a>
+
+
+
+
+<!-- <h3>Details of Movie {{moviedata.name}}</h3>
+<div style="background-color: lime;padding-left:20px ;">
+    Id:{{moviedata.id}}<br><br>
+    Year:{{moviedata.yearRelease}}<br><br>
+    Rating:{{moviedata.rating}}
+</div>
+<br><br>
+<a [routerLink]="['/listmovies']">Back to List</a> -->
