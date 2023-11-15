@@ -1,7 +1,7 @@
 <div class="container">
     <div class="jumbotron">
         <h1>Movie Listing</h1>
-        <div style="background-color: papayawhip;padding-left:20px ;">
+        <div style="background-color: lightyellow;padding-left:20px ;">
         <table class="table">
             <thead>
                 <th>Id</th>
@@ -9,6 +9,8 @@
                 <th>Rating</th>
                 <th>Year</th>
             </thead>
+        </div>
+        <div style="background-color: lightgreen;padding-left:20px ;">
             <tbody>
                 <tr *ngFor="let m of moviedata">
                     <td>{{m.id}}</td>
