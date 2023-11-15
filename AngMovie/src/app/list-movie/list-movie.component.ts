@@ -9,7 +9,8 @@ import { IMovie } from '../model/imovie';
 export class ListMovieComponent implements OnInit {
 moviedata:IMovie[]=[]
   constructor(private movieservice:MovieService) {
-    this.movieservice.getAllMovies().subscribe()
+    this.movieservice.getAllMovies().subscribe(data=>{this.moviedata=data})
+    console.log(this.moviedata)
    }
 
   ngOnInit() {
