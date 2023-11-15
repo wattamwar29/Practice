@@ -15,5 +15,7 @@ export class MovieService {
   }
   movie:IMovie
   getMovie(id:number):Observable<IMovie>
-  
+  {
+    return this.httpclient.get<IMovie>(this.url + '/ListMovie/' + id)
+  }
 }
