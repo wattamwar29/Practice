@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DeletemovieComponent } from './deletemovie.component';
+import { DeletemovieComponent } from '../deletemovie.component';
 
 describe('DeletemovieComponent', () => {
   let component: DeletemovieComponent;
