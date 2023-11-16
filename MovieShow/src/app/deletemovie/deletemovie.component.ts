@@ -25,7 +25,7 @@ export class DeletemovieComponent implements OnInit {
       saveData(movie:IMovie)
       {
         this.moviedata=movie
-        this.ms.deleteMovie(this.moviedata).subscribe(()=>{
+        this.ms.deleteMovie(this.moviedata.id).subscribe(()=>{
           alert("Record Deleted")
           this.route.navigate(['/listmovies'])
         })
