@@ -25,7 +25,10 @@ export class EditmovieComponent implements OnInit {
   saveData(movie:IMovie)
   {
     this.moviedata=movie
-    this.ms.editMovie(t)
+    this.ms.editMovie(this.moviedata).subscribe(()=>{
+      alert("Record Edited")
+      this.route.navigate(['/listmovies'])
+    })
   }
 
 }
