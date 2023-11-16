@@ -6,6 +6,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MovieserviceService {
+  private url='https://8080-bddcbabdfeddbfabcaaaceeafebeccaddbefddaf.premiumproject.examly.io/Movie'
+  constructor(private httpclient:HttpClient) {}
+  getAllMovies():Observable<any[]>
+  {
+    return this.httpclient.get<any[]>(this.url+'/ListMovies')
+  }
+  getMovie(id:number):Observable<IMovie>
+  {
+    return this.httpclient.get<IMovie>(this.url+'/ListMovies/'+ id)
+  }
 
-  constructor() { }
 }
