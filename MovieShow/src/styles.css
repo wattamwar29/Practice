@@ -12,7 +12,10 @@ tr:nth-child(even){
     background-color: lightgreen;
 }
 tr:nth-child(odd){
-    background-color: lightpink;
+    background-color: aquamarine;
+}
+th{
+    background-color: gold;
 }
 tr:hover{
     background-color: yellow;
