@@ -32,7 +32,7 @@ namespace jwt.Controllers
                 expires:DateTime.Now.AddMinutes(10),
                 signinCredentials:signinCredentials
             );
-            var tokenString = new
+            var tokenString = new 
         }
        }
     }
