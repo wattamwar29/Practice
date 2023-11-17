@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ReactformComponent implements OnInit {
   moviedata: IMovie
-  constructor(private fb:FormBuilder) { }
+  constructor(private ms:MovieserviceService,private fb:FormBuilder,private route:Router) { }
   movieform =this.fb.group({
     name:['',Validators.required],
     yearrelease : ['',[Validators.min(2000),Validators.max(2023)]],
@@ -26,7 +26,7 @@ export class ReactformComponent implements OnInit {
     this.ms.addMovie(this.moviedata).subscribe(
       ()=>{
         alert('Record Added Successfully')
-        alert.route.navigate(['listmovies'])
+        this.route.navigate(['listmovies'])
       }
     )
   }
