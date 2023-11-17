@@ -7,6 +7,6 @@ namespace jwt.Controllers
 {
     public class AuthenticateResponse
     {
-        public string ? Tokent{get;set;}
+        public string ? Token{get;set;}
     }
 }
