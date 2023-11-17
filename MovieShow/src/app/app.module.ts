@@ -7,11 +7,11 @@ import { ListmovieComponent } from './listmovie/listmovie.component';
 import { FindmovieComponent } from './findmovie/findmovie.component';
 import { MenuComponent } from './menu/menu.component';
 import { AddMovieComponent } from './add-movie/add-movie.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { EditmovieComponent } from './editmovie/editmovie.component';
 import { DeletemovieComponent } from './deletemovie/deletemovie.component';
 import { ReactformComponent } from './reactform/reactform.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,

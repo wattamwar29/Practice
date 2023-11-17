@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder,Validator, Validators } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { IMovie } from '../model/imovie';
 import { MovieserviceService } from '../service/movieservice.service';
 import { Router } from '@angular/router';
