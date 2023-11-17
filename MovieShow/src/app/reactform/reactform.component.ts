@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,Validator, Validators } from '@angular/forms';
 import { IMovie } from '../model/imovie';
+import { MovieserviceService } from '../service/movieservice.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-reactform',
   templateUrl: './reactform.component.html',
@@ -21,6 +23,12 @@ export class ReactformComponent implements OnInit {
       return
     }
     console.log(this.moviedata)
+    this.ms.addMovie(this.moviedata).subscribe(
+      ()=>{
+        alert('Record Added Successfully')
+        alert.route.navigate(['listmovies'])
+      }
+    )
   }
 
   ngOnInit() {
