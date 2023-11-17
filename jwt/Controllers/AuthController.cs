@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System.Security.Claim;
+using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 namespace jwt.Controllers
 {
@@ -32,8 +32,10 @@ namespace jwt.Controllers
                 expires:DateTime.Now.AddMinutes(10),
                 signinCredentials:signinCredentials
             );
-            var tokenString = new 
+            var tokenString = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
+            return Ok(new AuthenticateResponse{Tokent=tokenString});
         }
+        return Unauthorized();
        }
     }
 }
