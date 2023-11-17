@@ -30,7 +30,7 @@ namespace jwt.Controllers
                 audience:"http//0.0.0.0:8080",
                 claims:new List<Claim>(),
                 expires:DateTime.Now.AddMinutes(10),
-                signinCredentials:signinCredentials
+                signingCredentials:signinCredentials
             );
             var tokenString = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
             return Ok(new AuthenticateResponse{Tokent=tokenString});
