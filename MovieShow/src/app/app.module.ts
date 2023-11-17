@@ -10,7 +10,7 @@ import { AddMovieComponent } from './add-movie/add-movie.component';
 import { FormsModule } from '@angular/forms';
 import { EditmovieComponent } from './editmovie/editmovie.component';
 import { DeletemovieComponent } from './deletemovie/deletemovie.component';
-import { ReactormComponent } from './reactform/reactform.component';
+import { ReactFormComponent } from './reactform/reactform.component';
 import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AddMovieComponent,
     EditmovieComponent,
     DeletemovieComponent,
-    ReactformComponent
+    ReactFormComponent
   ],
   imports: [
     BrowserModule,
