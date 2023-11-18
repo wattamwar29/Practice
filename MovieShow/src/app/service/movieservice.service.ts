@@ -8,7 +8,7 @@ import { Idetails } from '../model/idetails';
 })
 export class MovieserviceService {
   private url='https://8080-bddcbabdfeddbfabcaaaceeafebeccaddbefddaf.premiumproject.examly.io/Movie'
-  private url2='https://8080-bddcbabdfeddbfabcaaaceeafebeccaddbefddaf.premiumproject.examly.io/Details'
+  private url2='https://8080-bddcbabdfeddbfabcaaaceeafebeccaddbefddaf.premiumproject.examly.io/Detail'
   constructor(private httpclient:HttpClient) {}
   getAllMovies():Observable<any[]>
   {
@@ -30,7 +30,7 @@ deleteMovie(id:number):Observable<IMovie>
   return this.httpclient.delete<IMovie>(this.url+'/DeleteMovie/'+id)
 }
 addDetails(detailsdata: Idetails) :Observable<Idetails>{
-  return this.httpclient.post<Idetails>(this.url2 + 'AddDetails',detailsdata, this.httpOptions)
+  return this.httpclient.post<Idetails>(this.url2 + '/AddDetails',detailsdata, this.httpOptions)
 }
 
 }
