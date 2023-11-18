@@ -4,7 +4,8 @@ import {HttpClient,HttpErrorResponse,HttpHeaders} from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { Idetails } from '../model/idetails';
 import { HttpResponse } from '@angular/common/http';
-import {catchError}
+import { HttpHandler } from '@angular/common/http';
+import {catchError} from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
