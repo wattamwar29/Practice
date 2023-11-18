@@ -8,7 +8,7 @@ import { Idetails } from '../model/idetails';
 })
 export class MovieserviceService {
   private url='https://8080-bddcbabdfeddbfabcaaaceeafebeccaddbefddaf.premiumproject.examly.io/Movie'
-  //private url2=
+  private url2='https://8080-bddcbabdfeddbfabcaaaceeafebeccaddbefddaf.premiumproject.examly.io/Details'
   constructor(private httpclient:HttpClient) {}
   getAllMovies():Observable<any[]>
   {
