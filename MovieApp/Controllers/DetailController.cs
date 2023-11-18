@@ -40,7 +40,7 @@ namespace MovieApp.Controllers
             }
             return Ok(data);
         }
-         [HttpPost]
+        [HttpPost]
         [Route("AddDetails")]
         public IActionResult Post(Detail detail)
         {
