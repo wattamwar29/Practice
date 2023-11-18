@@ -42,7 +42,7 @@ namespace MovieApp.Controllers
         }
          [HttpPost]
         [Route("AddDetails")]
-        public IActionResult Post([FromBody] Detail detail)
+        public IActionResult Post(Detail detail)
         {
             if(ModelState.IsValid){
                 try{
