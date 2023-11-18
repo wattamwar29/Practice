@@ -16,12 +16,12 @@ export class CreatedetailsComponent implements OnInit {
 
    }
    saveData(data:Idetails):void{
-    this.ms.addDetails(this.detailsdata).subscribe{
+    this.ms.addDetails(this.detailsdata).subscribe(
       ()=>{
         alert('Record Added Successfully')
         this.router.navigate(['/listmovies'])
       }
-    }
+    )
    }
 
   ngOnInit() {
