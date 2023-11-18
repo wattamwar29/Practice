@@ -1,1 +1,22 @@
-<p>createdetails works!</p>
+<h2>Adding Details</h2>
+<hr>
+<form (ngSubmit)="saveData(detailsdata)" #detailsform="ngForm">
+    <div class="container jumbotron" style="width: 500px;">
+    <div>
+        <label for="actor">Actor Name</label>
+        <input type="text" id="actor" [(ngModel)]="detailsdata.actor" #actor="ngModel"
+        class="form-control"
+    </div>
+    <div>
+        <label for="movieid">Actor Name</label>
+        <input type="movieid" id="movieid" [(ngModel)]="detailsdata.movieid" #actor="ngModel"
+        class="form-control" 
+        <option "ngFor="let sd of showdata" [value]="sd.id"
+            {{sd.name}}
+    </div>
+    <div>
+        <label for="actor">Actor Name</label>
+        <input type="text" id="actor" [(ngModel)]="detailsdata.actor" #actor="ngModel"
+        class="form-control"
+    </div>
+</form>

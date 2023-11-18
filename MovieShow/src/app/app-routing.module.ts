@@ -6,6 +6,7 @@ import { AddMovieComponent } from './add-movie/add-movie.component';
 import { EditmovieComponent } from './editmovie/editmovie.component';
 import { DeletemovieComponent } from './deletemovie/deletemovie.component';
 import { ReactFormComponent } from './reactform/reactform.component';
+import { CreatedetailsComponent } from './createdetails/createdetails.component';
 // import { ReactformComponent } from './reactform/reactform.component';
 
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:'add',component:AddMovieComponent},
   {path:'edit/:id',component:EditmovieComponent},
   {path:'delete/:id',component:DeletemovieComponent},
-  {path:'reactform',component:ReactFormComponent}
+  {path:'reactform',component:ReactFormComponent},
+  {path:'details',component:CreatedetailsComponent}
 ];
 
 @NgModule({
