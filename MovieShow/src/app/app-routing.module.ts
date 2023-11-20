@@ -7,11 +7,11 @@ import { EditmovieComponent } from './editmovie/editmovie.component';
 import { DeletemovieComponent } from './deletemovie/deletemovie.component';
 import { ReactFormComponent } from './reactform/reactform.component';
 import { CreatedetailsComponent } from './createdetails/createdetails.component';
-// import { ReactformComponent } from './reactform/reactform.component';
-
+import { AuthService } from './service/auth.service';
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
-  {path:'listmovies',component:ListmovieComponent},
+  {path:'listmovies',component:ListmovieComponent,canActivate:[AuthGuard]},
   {path:'find/:id',component:FindmovieComponent},
   {path:'add',component:AddMovieComponent},
   {path:'edit/:id',component:EditmovieComponent},
